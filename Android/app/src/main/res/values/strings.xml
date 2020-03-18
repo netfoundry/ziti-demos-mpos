@@ -1,0 +1,37 @@
+<resources>
+    <string name="help_text">Please contact your merchant bank for assistance.</string>
+    <string name="sale">Sale</string>
+    <string name="back">Back</string>
+    <string name="recipient">Phone/Alias</string>
+    <string name="amount">Amount</string>
+    <string name="status">Status</string>
+    <string name="nodata">No Transaction Available.</string>
+    <string name="temporary_password">Temporary Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="done">Done</string>
+
+    <string name="mobile_size_error">Mobile number must be between %1$d and %2$d characters long.</string>
+
+    <string name="date">Date/Time</string>
+    <string name="p2m_amount_hint_text">Purchase Amount</string>
+    <string name="p2m_pin_hint_text">Enter Txn PIN by Customer</string>
+    <string name="transaction_status">Transaction Status</string>
+    <string name="p2m_mobile_hint_text">Customer Mobile Number</string>
+
+    <string name="help">Need Support?</string>
+    <string name="app_name">FlashApp</string>
+    <string name="enter_username_label">Merchant Login Id</string>
+    <string name="enter_password_label"><font size="18">Password</font></string>
+    <string name="remember_me">Remember Me</string>
+    <string name="sign_in">Sign In</string>
+    <string name="next">Next</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+
+    <string name="app_font">fonts/AvenirNextLTPro-Regular.ttf</string>
+    <string name="app_font_medium">fonts/AvenirNextLTPro-Medium.ttf</string>
+    <string name="app_font_demi">fonts/AvenirNextLTPro-Demi.ttf</string>
+    <string name="app_font_bold">fonts/AvenirNextLTPro-Bold.ttf</string>
+
+</resources>

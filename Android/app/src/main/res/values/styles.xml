@@ -1,0 +1,211 @@
+<resources>
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="spinner_style" parent="edit_text_style_login">
+        <item name ="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/edit_text_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/edit_text_margin_right</item>
+    </style>
+
+    <style name="edit_text_style_login" parent="android:Widget.Holo.Light.EditText">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/edit_text_border</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="edittext_with_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:background">@drawable/edit_text_with_image_bg</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+    <style name="edittext_with_image.password">
+        <item name="android:inputType">numberPassword</item>
+    </style>
+
+    <style name="edittext_with_image.number_fields">
+        <item name="android:inputType">number|phone</item>
+        <item name="android:digits">0123456789</item>
+    </style>
+
+    <style name="button_normal_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@drawable/button_bg_enabled</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/h6_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/margin_medium</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium</item>
+    </style>
+
+    <style name="button_normal_style.cancel">
+        <item name="android:background">@drawable/button_bg_enabled_cancel</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/h6_text_size</item>
+    </style>
+
+    <style name="button_normal_style.dialog_enabled_button">
+        <item name="android:background">@drawable/dialog_button_bg_green</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/h6_text_size</item>
+    </style>
+
+    <style name="button_normal_style.dialog_cancel_button">
+        <item name="android:background">@drawable/dialog_cancel_button_bg</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/h6_text_size</item>
+    </style>
+
+    <style name="button_normal_style.cancel.border">
+        <item name="android:background">@drawable/edit_text_border</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/h6_text_size</item>
+    </style>
+
+    <style name="button_normal_style.dialog_cancel">
+        <item name="android:background">@drawable/button_bg_stroke_cancel</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="button_normal_style.disabled">
+        <item name="android:background">@drawable/login_bg_enabled</item>
+    </style>
+
+    <style name="button_normal_style.login_disabled">
+        <item name="android:background">@drawable/login_bg_disabled</item>
+    </style>
+    <style name="button_normal_style.login_enabled">
+        <item name="android:background">@drawable/login_bg_enabled</item>
+    </style>
+
+    <style name="spinner_dropdown_style" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/light_gray</item>
+    </style>
+
+    <style name="spinner_text_style">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/medium_lite_gray</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="edit_text_style">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/edit_text_border</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/medium_lite_gray</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="date_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/edit_text_border</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/medium_lite_gray</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:layout_marginLeft">@dimen/edit_text_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/edit_text_margin_right</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="pending_transaction_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingBottom">@dimen/padding_gap_small</item>
+        <item name="android:paddingTop">@dimen/padding_gap_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="action_bar_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/action_bar_bottom_line</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="qr_template_instruction_text_appearence">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:maxEms">12</item>
+        <item name="android:ems">12</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="qr_template_number_image">
+        <item name="android:layout_width">34dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:baselineAlignBottom">true</item>
+        <item name="android:layout_gravity">bottom|center_vertical</item>
+    </style>
+
+    <style name="qr_number_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+</resources>

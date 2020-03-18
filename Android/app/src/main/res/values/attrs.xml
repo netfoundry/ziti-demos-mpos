@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Fontify">
+        <attr name="font_name" format="string" />
+        <attr name="style" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextView">
+        <attr name="customEllipsize" format="boolean" />
+    </declare-styleable>
+
+</resources>

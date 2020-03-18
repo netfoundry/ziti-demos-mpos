@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/environment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+        <com.nf.flash.fontify.ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_top_logo"
+            android:contentDescription="Flash Logo"
+            android:src="@drawable/flash_mainhead" />
+
+        <com.nf.flash.fontify.ImageView
+            android:id="@+id/flash_icon"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_top_logo"
+            android:contentDescription="Flash Logo"
+            android:src="@drawable/flash_icon" />
+
+        <com.nf.flash.fontify.EditText
+            android:id="@+id/input_username"
+            style="@style/edit_text_style_login"
+            android:hint="@string/enter_username_label"
+            android:inputType="text"
+            fontify:font_name="@string/app_font"
+            android:textSize="@dimen/h6_text_size"/>
+
+        <com.nf.flash.fontify.EditText
+            android:id="@+id/input_password"
+            style="@style/edit_text_style_login"
+            android:hint="@string/enter_password_label"
+            android:inputType="textPassword"
+            android:textColorHint="@android:color/darker_gray"
+            fontify:font_name="@string/app_font"
+            android:textSize="@dimen/h6_text_size"/>
+
+
+        <com.nf.flash.fontify.Button
+            android:id="@+id/user_login_btn"
+            style="@style/button_normal_style.login_disabled"
+            android:text="@string/sign_in"
+            android:layout_marginTop="20dp"
+            android:background="#32888f"/>
+
+        <com.nf.flash.fontify.TextView
+            android:id="@+id/layout_help"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/help"
+            android:drawablePadding="4dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="2dp"
+            android:text="@string/help"
+            android:textColor="#32888f"
+            android:textSize="@dimen/h6_text_size"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,52 @@
+ 
+
+<router-outlet></router-outlet>
+ 
+<h1 align="center" id="customers" ><font color="#32888f">{{title}}</font></h1>
+  
+  <!-- Displaying value in Welcome variable -->
+  <font size="4" face="Courier New" > 
+  <table id="customers">
+      <thead>
+        <tr>
+          <th *ngFor="let i of merchantHeadingList" style="text-align:center;">{{i}}</th>
+          
+        </tr>
+      </thead>  
+      <!-- Repeating All the `movies` data in movie -->
+      <tbody>
+      <tr *ngFor="let data of merchantsList; let i = index;  " style="text-align:center;">
+          <td>{{i + 1}}</td>
+          <td>{{data.merchantId}}</td>
+          <td>{{data.firstName}}</td>
+          <td>{{data.phoneNo}}</td>
+          <td>{{data.emailId}}</td>
+          <td>
+            <table  id="customers">
+                <thead>
+                    <tr>
+                      <th *ngFor="let i of customerHeadingsList" style="text-align:center;">{{i}}</th>                      
+                    </tr>
+                  </thead>
+                  <tr *ngFor="let customer of data.merchantdetails; let i = index" style="text-align:center;">
+                      <td>{{i + 1}}</td>
+                      <td>{{customer.mobilenumber}}</td>
+                      <td>{{customer.transactionamount}}</td>
+                      <td>{{customer.otp}}</td>
+                       <td>{{customer.message}}</td>                       
+                      <td>{{customer.transactionTime| date: 'ddM-M-yyyy , hh:mm:ss'}}</td>
+                      <td>{{customer.modifiedTime| date: 'ddM-M-yyyy , hh:mm:ss'}}</td>
+                      <td>
+                        <button type="button" (click)="myClickFunction(customer)">
+                          Get Time Difference!
+                        </button>
+                      </td>                   
+                  </tr>
+            </table>            
+          </td> 
+          <!-- <td width="10%"><img  height="5%" width="60%" src="{{data.flag}}" /></td> -->
+      </tr>
+    </tbody>
+  </table>  
+</font>
+  

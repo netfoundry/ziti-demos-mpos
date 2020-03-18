@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/navigation_drawer" />
+
+    <com.nf.flash.widgets.FNavigationDrawer
+        android:id="@+id/navigationDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.nf.flash.widgets.FActionBar
+            android:id="@+id/custom_actionbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.nf.flash.widgets.MainTemplates
+            android:id="@+id/mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/custom_actionbar"
+            android:background="#dbdbdb">
+
+            <RelativeLayout
+                android:id="@+id/settings_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true">
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/settings_layout"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_gray">
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/medium_gray" />
+
+                    <com.nf.flash.fontify.TextView
+                        android:id="@+id/merchant_name_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/line"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Indian Merchant"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        fontify:font_name="@string/app_font_demi" />
+
+                    <RelativeLayout
+                        android:id="@+id/home_btn_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/merchant_name_tv"
+                        android:layout_marginTop="-2dp"
+                        android:background="@color/light_gray"
+                        android:paddingBottom="2dp">
+
+                        <com.nf.flash.widgets.FCategoryButton
+                            android:id="@+id/sale_link_btn"
+                            android:layout_width="139dp"
+                            android:layout_height="159dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@android:color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </ScrollView>
+        </com.nf.flash.widgets.MainTemplates>
+    </com.nf.flash.widgets.FNavigationDrawer>
+</RelativeLayout>

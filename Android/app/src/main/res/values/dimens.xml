@@ -1,0 +1,78 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_bar_height">48dp</dimen>
+
+    <dimen name="h8_text_size">10sp</dimen>
+    <dimen name="h7_text_size">12sp</dimen>
+     <dimen name="title_size">16sp</dimen>
+    <dimen name="h6_text_size">18sp</dimen>
+    <dimen name="notification_body_size">16sp</dimen>
+    <dimen name="notification_time_size">15sp</dimen>
+    <dimen name="h5_text_size">20sp</dimen>
+    <dimen name="h4_text_size">24sp</dimen>
+    <dimen name="h3_text_size">30sp</dimen>
+    <dimen name="h2_text_size">32sp</dimen>
+    <dimen name="h1_text_size">46sp</dimen>
+    <dimen name="margin_top_logo">60dp</dimen>
+
+    <dimen name="margin_ultra_small">1dp</dimen>
+    <dimen name="margin_extra_small">2dp</dimen>
+    <dimen name="margin_navigation_slider_button">6dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="padding_gap">12dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="arrow_size">20dp</dimen>
+    <dimen name="margin_large">28dp</dimen>
+    <dimen name="margin_textview">36dp</dimen>
+    <dimen name="edit_text_height">40dp</dimen>
+    <dimen name="margin_extra_large">46dp</dimen>
+    <dimen name="margin_extra_large_pl">50dp</dimen>
+    <dimen name="margin_ultra_large">60dp</dimen>
+    <dimen name="margin_extra_large_plus">72dp</dimen>
+    <dimen name="landing_page_logo_margin">40dp</dimen>
+    <dimen name="landing_page_logo_top_margin">24dp</dimen>
+
+    <dimen name="help_icon_size">24dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="edittext_margin">56dp</dimen>
+    <dimen name="text_width">120dp</dimen>
+    <dimen name="drawer_icon_size">34dp</dimen>
+    <dimen name="landing_page_green_bg_height">40dp</dimen>
+    <dimen name="merchant_image_size">60dp</dimen>
+    <dimen name="success_margin_left">25dp</dimen>
+    <dimen name="amount_margin_left">40dp</dimen>
+    <dimen name="success_text_size">10sp</dimen>
+
+    <dimen name="sucess_text_label_margin_left">12dp</dimen>
+    <dimen name="success_text_layout_margin">15dp</dimen>
+    <dimen name="success_text_margin_left">20dp</dimen>
+    <dimen name="refund_detail_text_left_margin">65dp</dimen>
+    <dimen name="refund_label_text_size">13sp</dimen>
+    <dimen name="rewards_details_text_left_margin">76dp</dimen>
+    <dimen name="refund_details_text_left_margin_small">8dp</dimen>
+    <dimen name="admin_pwd_message_text_size">12sp</dimen>
+    <dimen name="instruction_text_size">13sp</dimen>
+    <dimen name="tip_option_text_size">12sp</dimen>
+    <dimen name="help_text_size">15sp</dimen>
+    <dimen name="padding_success_text">34dp</dimen>
+
+    <dimen name="edit_text_margin_left">12dp</dimen>
+    <dimen name="edit_text_margin_right">12dp</dimen>
+
+    <dimen name="padding_gap_small">4dp</dimen>
+    <dimen name="text_size">12sp</dimen>
+    <dimen name="no_data_available">15sp</dimen>
+    <dimen name="password_reset_message_size">14sp</dimen>
+    <dimen name="pwd_reset_msg_title_size">16sp</dimen>
+
+    <dimen name="qr_code_width_420dp">420dp</dimen>
+    <dimen name="qr_padding_32dp">32dp</dimen>
+    <dimen name="qr_padding_16dp">16dp</dimen>
+    <dimen name="qr_flash_logo_height">80dp</dimen>
+    <dimen name="qr_margin_24dp">24dp</dimen>
+    <dimen name="qr_merchant_name_38sp">38sp</dimen>
+    <dimen name="qr_margin_8dp">8dp</dimen>
+</resources>

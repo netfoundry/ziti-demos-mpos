@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/navigation_drawer" />
+
+    <com.nf.flash.widgets.FNavigationDrawer
+        android:id="@+id/navigationDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.nf.flash.widgets.FActionBar
+            android:id="@+id/custom_actionbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/light_gray"
+            android:visibility="gone" />
+
+        <com.nf.flash.widgets.MainTemplates
+            android:id="@+id/mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/custom_actionbar"
+            android:background="@color/light_gray">
+
+            <com.nf.flash.widgets.MerchantHeader
+                android:id="@+id/loggedIn_merchant_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:id="@+id/field_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loggedIn_merchant_layout"
+                android:orientation="vertical"
+                android:paddingTop="4dp">
+
+                <com.nf.flash.fontify.EditText
+                    android:id="@+id/input_mobile_number"
+                    style="@style/edittext_with_image"
+                    android:drawableLeft="@drawable/flash_mobile"
+                    android:ellipsize="end"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/p2m_mobile_hint_text"
+                    fontify:font_name="@string/app_font"
+                    android:inputType="number"
+                    android:maxLength="10"/>
+
+                <com.nf.flash.fontify.EditText
+                    android:id="@+id/input_amount"
+                    style="@style/edittext_with_image.number_fields"
+                    android:layout_marginTop="1dp"
+                    android:drawableLeft="@drawable/flash_dollar_icon"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/p2m_amount_hint_text"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    fontify:font_name="@string/app_font" />
+
+                <com.nf.flash.fontify.EditText
+                    android:id="@+id/input_pin"
+                    style="@style/edittext_with_image.number_fields"
+                    android:layout_marginTop="1dp"
+                    android:drawableLeft="@drawable/flash_dollar_icon"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/p2m_pin_hint_text"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:visibility="gone"
+                    fontify:font_name="@string/app_font" />
+
+                <LinearLayout
+                    android:id="@+id/buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <com.nf.flash.fontify.Button
+                        android:id="@+id/button_submit_transaction"
+                        style="@style/button_normal_style.disabled"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/submit"
+                        fontify:font_name="@string/app_font" />
+
+                    <com.nf.flash.fontify.Button
+                        android:id="@+id/button_cancel_transaction"
+                        style="@style/button_normal_style.cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cancel"
+                        fontify:font_name="@string/app_font" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/status_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/loggedIn_merchant_layout"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:paddingTop="8dp">
+
+                    <com.nf.flash.fontify.TextView
+                        android:id="@+id/transaction_status_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_weight="1"
+                        android:text="@string/transaction_status"
+                        android:textColor="#32888f"
+                        android:textSize="@dimen/title_size"
+                        fontify:font_name="@string/app_font_demi" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/listview_headers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_teal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp">
+
+                    <com.nf.flash.fontify.TextView
+                        android:id="@+id/dashboard_date_label"
+                        style="@style/pending_transaction_text_style"
+                        android:paddingLeft="8dp"
+                        android:text="@string/date"
+                        fontify:font_name="@string/app_font" />
+
+                    <com.nf.flash.fontify.TextView
+                        android:id="@+id/dashboard_recipient_label"
+                        style="@style/pending_transaction_text_style"
+                        android:text="@string/recipient"
+                        fontify:font_name="@string/app_font" />
+
+                    <com.nf.flash.fontify.TextView
+                        android:id="@+id/dashboard_amount_label"
+                        style="@style/pending_transaction_text_style"
+                        android:gravity="center"
+                        android:text="@string/amount"
+                        fontify:font_name="@string/app_font" />
+
+                    <com.nf.flash.fontify.TextView
+                        android:id="@+id/dashboard_status_label"
+                        style="@style/pending_transaction_text_style"
+                        android:gravity="left"
+                        android:text="@string/status"
+                        fontify:font_name="@string/app_font" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/transactionsDashBoardListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/listview_headers"
+                    android:background="@drawable/listview_bg"
+                    android:divider="@color/light_medium_gray"
+                    android:dividerHeight="1dp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/listview_headers">
+
+                    <com.nf.flash.fontify.TextView
+                        android:id="@+id/empty_transaction_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="@string/nodata"
+                        android:textColor="#32888f"
+                        android:textSize="@dimen/no_data_available"
+                        android:visibility="visible"
+                        fontify:font_name="@string/app_font" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.nf.flash.widgets.MainTemplates>
+    </com.nf.flash.widgets.FNavigationDrawer>
+</RelativeLayout>

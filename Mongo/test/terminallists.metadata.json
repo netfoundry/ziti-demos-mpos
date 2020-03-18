@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"test.terminallists"}],"uuid":"6a6dad9034bc43068aa88bbcf7cf160b"}

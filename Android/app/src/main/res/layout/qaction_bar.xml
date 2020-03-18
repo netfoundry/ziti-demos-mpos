@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/actionbar_main_layout"
+    android:background="@android:color/white"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/navigation_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/navigation_slider_button" />
+
+        <com.nf.flash.fontify.TextView
+            android:id="@+id/left_navigation_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_navigation_slider_button"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back"
+            android:drawableLeft="@drawable/back_arrow"
+            android:textColor="@color/dark_green"
+            android:textSize="@dimen/h6_text_size"
+            fontify:font_name="@string/app_font_medium"
+            android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flash_icon"
+        android:background="@drawable/flash_head_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        />
+
+    <com.nf.flash.fontify.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/log_out_tv"
+        android:textStyle="bold"
+        android:textColor="@color/dark_gray"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="5dp"
+        fontify:font_name="@string/app_font_demi"/>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="16dp" >
+
+    <com.nf.flash.fontify.TextView
+        android:id="@+id/qhomepage_category_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableBottom="@drawable/flash_home_sale"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal"
+        android:text="Sale"
+        android:textColor="@color/dark_gray"
+        android:textSize="22sp"
+        fontify:font_name="@string/app_font_demi"
+        android:background="@android:color/white"/>
+
+</RelativeLayout>

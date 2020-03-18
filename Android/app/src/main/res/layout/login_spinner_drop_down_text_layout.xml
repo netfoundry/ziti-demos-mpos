@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nf.flash.fontify.TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/region_tv_dummy"
+    style="@style/spinner_text_style"
+    android:hint="Select Report"
+    android:visibility="visible"
+    android:background="@android:color/white"
+    fontify:font_name="@string/app_font" />

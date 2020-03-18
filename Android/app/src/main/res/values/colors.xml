@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="dark_blue_green">#354E53</color>
+    <color name="dark_grey">#58595B</color>
+    <color name="dark_green">#2d4b4f</color>
+    <color name="navigation_list_item_text">#008B8B</color>
+    <color name="light_medium_gray">#EFEFF4</color>
+    <color name="dark_teal">#008B8B</color>
+    <color name="navigation_list_divider">#e0e0e0</color>
+    <color name="drawer_menu_bg">#fcfcfc</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="medium_lite_gray">#a5a4a5</color>
+    <color name="red">#FA5858</color>
+    <color name="app_bg">#F4F5F7</color>
+    <color name="dark_gray">#32888f</color>
+    <color name="light_gray">#F4F5F7</color>
+    <color name="light_gray1">#E0E0E0</color>
+    <color name="medium_gray">#008B8B</color>\
+    <color name="white">#FFFFFF</color>
+    <color name="flash_lime">#008B8B</color>
+    <color name="flash_lime_80op">#008B8B</color>
+    <color name="action_bar_bottom_line">#E0E0E0</color>
+</resources>
